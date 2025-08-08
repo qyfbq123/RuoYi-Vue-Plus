@@ -1,6 +1,6 @@
 package com.aibang.crm.service;
 
-import com.aibang.crm.domain.vo.LoginVo;
+import com.aibang.crm.vo.LoginVo;
 import org.dromara.common.core.exception.ServiceException;
 import org.dromara.common.core.utils.SpringUtils;
 import org.dromara.system.domain.vo.SysClientVo;

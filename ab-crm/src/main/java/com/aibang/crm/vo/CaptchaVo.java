@@ -1,4 +1,4 @@
-package com.aibang.crm.domain.vo;
+package com.aibang.crm.vo;
 
 import lombok.Data;
 

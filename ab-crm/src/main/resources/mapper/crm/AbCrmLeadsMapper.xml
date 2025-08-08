@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aibang.crm.mapper.AbCrmLeadsMapper">
+
+    <update id="transToProject">
+        update ab_crm_leads
+            set project_id = #{projectId}
+        where leads_id= #{leadsId}
+    </update>
+
+    <update id="clearProjects">
+        update ab_crm_leads
+            set project_id = null
+        where project_id IN
+        <foreach collection="projectIds" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </update>
+
+</mapper>

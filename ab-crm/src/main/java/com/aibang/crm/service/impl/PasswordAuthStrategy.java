@@ -4,7 +4,7 @@ import cn.dev33.satoken.stp.StpUtil;
 import cn.dev33.satoken.stp.parameter.SaLoginParameter;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.crypto.digest.BCrypt;
-import com.aibang.crm.domain.vo.LoginVo;
+import com.aibang.crm.vo.LoginVo;
 import com.aibang.crm.service.IAuthStrategy;
 import com.aibang.crm.service.SysLoginService;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
